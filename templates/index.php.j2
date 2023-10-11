@@ -1,0 +1,9 @@
+<?php
+$serverTimezone = 'Africa/Lagos'; // Set the server's timezone
+
+date_default_timezone_set($serverTimezone); // Set the script's timezone to match the server
+
+echo "Server Timezone: " . $serverTimezone . "<br>";
+echo date("F d, Y h:i:s A e", time()); // Display the date and time
+?>
+

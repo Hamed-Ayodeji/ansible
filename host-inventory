@@ -9,3 +9,6 @@ vagrant@192.168.56.13
 [db]
 vagrant@192.168.56.14
 vagrant@192.168.56.15
+
+[exe]
+vagrant@192.168.56.9

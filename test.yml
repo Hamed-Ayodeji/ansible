@@ -1,12 +1,14 @@
 ---
 - name: Setup Web Server
-  host: all
+  hosts: all
   remote_user: vagrant
 
-  task:
+  tasks:
   - name: Install Apache Server
     apt:
       name: apache2
       state: present
-  - nam: Add sample file
+    become: yes
+    
+  - name: Add sample file
     command: echo "Hello World" > /var/www/html/index.html
